@@ -420,7 +420,7 @@ Level3 proc
             call ShowPauseScreen
             call InitialiseScreen
         skipPause:
-        cmp score, 1
+        cmp score, 9
         jge endL
         cmp lives, 0
     jg gameLoop
@@ -632,7 +632,7 @@ Level2 proc
             call ShowPauseScreen
             call InitialiseScreen
         skipPause:
-        cmp score, 1
+        cmp score, 9
         jge endL
         cmp lives, 0
     jg gameLoop
@@ -1637,9 +1637,9 @@ updateBalls proc
 updateBalls endp
 
 GamePlay proc
-  call Level1
+ call Level1
   call gameOver
-  cmp score, 1
+  cmp score, 5
   jl gameO
    INVOKE PlaySound, OFFSET levelComp,NULL, 2001h
         mov eax, 1500
@@ -1647,15 +1647,15 @@ GamePlay proc
         INVOKE PlaySound, OFFSET soundFile,NULL, 2001h
   call Level2  
   call gameOver
-  cmp score, 1
+  cmp score, 9
   jl gameO
    INVOKE PlaySound, OFFSET levelComp,NULL, 2001h
         mov eax, 1500
         call delay
-        INVOKE PlaySound, OFFSET soundFile,NULL, 2001h 
+        INVOKE PlaySound, OFFSET soundFile,NULL, 2001h
   call Level3
   call gameOver
-  cmp score, 1
+  cmp score, 9
   jl gameO
   call winningScreen
   gameO:
@@ -1699,7 +1699,7 @@ Level1 proc
             call ShowPauseScreen
             call InitialiseScreen
         skipPause:
-        cmp score, 1
+        cmp score, 5
         jge endL
         cmp lives, 0
     jg gameLoop
@@ -1936,3 +1936,5 @@ MenuScreen proc
     ret
 MenuScreen endp
 end main
+i230633.asm
+Displaying i230633.asm.
