@@ -43,7 +43,7 @@ This project is a clone of the popular Zuma Balls game using x86 assembly langua
 ## End Screen
 - A final score display to conclude the game.
 ## Winning Screen
-![Winning Screen](Screenshots/winning.jpg)
+![Winning Screen](Screenshots/Winning.jpg)
 
 ## Scoring
 - The program does filehandling and writes the name, level and score of the players in a .txt file.
