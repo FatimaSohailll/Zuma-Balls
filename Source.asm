@@ -1936,5 +1936,3 @@ MenuScreen proc
     ret
 MenuScreen endp
 end main
-i230633.asm
-Displaying i230633.asm.
